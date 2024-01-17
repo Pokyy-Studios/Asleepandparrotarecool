@@ -7,7 +7,18 @@
 	<form>
 		<label for="password">Enter Password:</label>
 		<input type="password" id="password" name="password">
-		<input type="submit" value="Submit">
+		<input type="submit" value="Submit" onclick="checkPassword()">
 	</form>
+
+	<script>
+		function checkPassword() {
+			var password = document.getElementById("password").value;
+			if (password === "proxpod") {
+				window.location = "home.html";
+			} else {
+				alert("Incorrect password. Please try again.");
+			}
+		}
+	</script>
 </body>
 </html>
