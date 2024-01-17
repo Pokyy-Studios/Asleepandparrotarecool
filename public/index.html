@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Password Protected Page</title>
+	<title>Site Blocked</title>
 </head>
 <body>
-	<form>
-		<label for="password">Enter Password:</label>
-		<input type="password" id="password" name="password">
-		<input type="submit" value="Submit" onclick="checkPassword()">
-	</form>
+	<h1>Site Blocked</h1>
+	<button onclick="redirect()">Close Tab</button>
 
 	<script>
-		function checkPassword() {
-			var password = document.getElementById("password").value;
-			if (password === "proxpod") {
-				window.location = "home.html";
-			} else {
-				alert("Incorrect password. Please try again.");
-			}
+		function redirect() {
+			window.location = "home.html";
 		}
 	</script>
 </body>
